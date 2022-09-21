@@ -38,7 +38,7 @@
 }
 
 def morse_encode(given_code)
-  text = given_code.split('   ').map { |word| word.split.map { |code| @morse_code_dictionary[code] }.join }.join(' ')
+  text = given_code.split('   ').map { |subString| subString.split.map { |key| @morse_code_dictionary[key] }.join }.join(' ')
   puts text
 end
 

@@ -38,8 +38,8 @@
 }
 
 def morse_encode(given_code)
-  text = given_code.split('   ').map { |subString| subString.split.map { |key| @morse_code_dictionary[key] }.join }.join(' ')
+  text = given_code.split('   ').map { |sub_string| sub_string.split.map { |key| @morse_code_dictionary[key] }.join }.join(' ')
   puts text
 end
 
-morse_encode('-- -.--   -. .- -- .   .. ...   -.-- .- -.-- -. . .-.')
+morse_encode('-- -.--   -. .- -- .   .. ...   -.-- .- -.-- -. . .-.') # outputs "MY NAME IS YAYNER"

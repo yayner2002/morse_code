@@ -74,8 +74,22 @@
 
 }
 
-def morse_encode(given_code)
-  text = given_code.split('   ').map { |sub_string| sub_string.split.map { |key| @morse_code_dic[key] }.join }.join(' ')
-  puts text
+def morse_char_decode(char)
+  @morse_code_dic[char]
 end
-morse_encode('-- -.--   -. .- -- .   .. ...   -.-- .- -.-- -. . .-.') # displays MY NAME IS YAYNER
+
+def morse_word_decode(word)
+  word_split = word.split
+
+  word_result = word_split.map { |char| morse_char_decode(char) }
+
+  word_result.join
+end
+
+def morse_sentence_decode(sentence)
+  sentence_aplit = sentence.split('   ')
+  sentence_result = sentence_aplit.map { |word| morse_word_decode(word) }
+  sentence_result.join(' ')
+end
+
+print morse_sentence_decode('-- -.--   -. .- -- .   .. ...   -.-- .- -.-- -. . .-.') # displays MY NAME IS YAYNER

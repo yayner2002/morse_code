@@ -30,7 +30,7 @@ none
 👤 **Johnson**
 
 - GitHub: [@Johnson](https://github.com/ifzyy)
-- Twitter: [@Johsnon](https://twitter.com/Johnsn_emmanuel)
+- Twitter: [@Johsnon](https://twitter.com/JohnsnEmmanuel)
 - LinkedIn: [Johnson](https://linkedin.com/in/johnson-emmanuel)
 
 ## 🤝 Contributing

@@ -1,4 +1,4 @@
-@morse_code_dictionary = {
+@morse_code_dic = {
   '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
@@ -38,7 +38,7 @@
 }
 
 def morse_encode(given_code)
-  text = given_code.split('   ').map { |sub_string| sub_string.split.map { |key| @morse_code_dictionary[key] }.join }.join(' ')
+  text = given_code.split('   ').map { |sub_string| sub_string.split.map { |key| @morse_code_dic[key] }.join }.join(' ')
   puts text
 end
 

@@ -42,4 +42,5 @@ def morse_encode(given_code)
   puts text
 end
 
-morse_encode('-- -.--   -. .- -- .   .. ...   -.-- .- -.-- -. . .-.') # outputs "MY NAME IS YAYNER"
+morse_encode('-- -.--   -. .- -- .   .. ...   -.-- .- -.-- -. . .-.') # displays MY NAME IS YAYNER
+
